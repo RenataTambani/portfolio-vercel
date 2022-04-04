@@ -1,0 +1,76 @@
+@import "header.css";
+@import "footer.css";
+@import "bootstrap.css";
+
+.bg-01 {
+  background-color: #e6e5e1;
+}
+.bg-02 {
+  background-color: #ffffff;
+}
+html {
+  width: 100%;
+}
+body {
+  font-family: "Roboto Mono";
+  margin: 0 auto;
+}
+.container2 {
+  max-width: 1200px;
+}
+.home {
+  height: 20rem;
+  padding-top: 50px;
+}
+h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+  color: #e6e5e1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.sobre {
+  font-size: 2rem;
+}
+/*imagens*/
+.teste {
+  width: 300px;
+}
+.titulo-portfolio {
+  display: flex;
+  flex-grow: 1;
+}
+.portfolio {
+  font-size: 15rem;
+  font-weight: 800;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e6e5e1;
+  z-index: -1;
+  position: absolute;
+}
+
+.celular {
+  position: relative;
+}
+.zoom {
+  transition: transform 0.2s; /* Animation */
+}
+
+.zoom:hover {
+  transform: scale(
+    1.2
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.box-shadow {
+  box-shadow: 3px 3px 1px 0.5px rgba(126, 126, 126, 0.2),
+    1px 1px 1px 0.5px rgb(180, 180, 180);
+}
+
+img {
+  width: 100%;
+}
