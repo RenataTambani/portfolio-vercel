@@ -4,6 +4,7 @@
 
 .bg-01 {
   background-color: #e6e5e1;
+  background-attachment: cover;
 }
 .bg-02 {
   background-color: #ffffff;
@@ -12,14 +13,20 @@ html {
   width: 100%;
 }
 body {
-  font-family: "Roboto Mono";
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
 }
+
+a {
+  text-decoration: none;
+}
+
 .container2 {
-  max-width: 1200px;
+  text-align: justify;
+  max-width: 1000px;
 }
 .home {
-  height: 20rem;
+  height: auto;
   padding-top: 50px;
 }
 h1 {
@@ -27,35 +34,27 @@ h1 {
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+img {
+  width: 100%;
+}
 .nav-link {
   color: #e6e5e1;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
+  font-size: large;
 }
 .sobre {
   font-size: 2rem;
+}
+
+.h6 {
+  font-weight: bold;
 }
 /*imagens*/
 .teste {
   width: 300px;
 }
-.titulo-portfolio {
-  display: flex;
-  flex-grow: 1;
-}
-.portfolio {
-  font-size: 15rem;
-  font-weight: 800;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #e6e5e1;
-  z-index: -1;
-  position: absolute;
-}
 
-.celular {
-  position: relative;
-}
 .zoom {
   transition: transform 0.2s; /* Animation */
 }
@@ -67,10 +66,126 @@ h1 {
 }
 
 .box-shadow {
-  box-shadow: 3px 3px 1px 0.5px rgba(126, 126, 126, 0.2),
-    1px 1px 1px 0.5px rgb(180, 180, 180);
+  box-shadow: 2px 2px 5px 1px #afafaf93, 1px 1px 5px 0.5px #d8d8d8fa;
 }
 
-img {
-  width: 100%;
+.box {
+  float: top;
+  overflow: hidden;
+  background: #e6e5e1;
+  position: absolute;
+  margin-top: 6rem;
+  margin-left: 3rem;
+}
+/* Add padding and border to inner content
+for better animation effect */
+.box-inner {
+  text-align: justify;
+  width: 15rem;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #777776;
+  border-radius: 4px;
+}
+.btn-inner {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  background-color: rgba(207, 206, 203, 0.671);
+  margin-top: 10px;
+}
+
+.notification-container {
+  width: 0px;
+}
+.ativo {
+  width: 15rem;
+}
+/* MEDIA QUERY */
+
+@media (max-width: 770px) {
+  .zoom:hover {
+    transform: scale(1);
+  }
+
+  img {
+    max-width: 100px;
+  }
+  .box {
+    margin-left: auto;
+  }
+  .box-inner,
+  .ativo {
+    width: 15rem;
+    height: auto;
+  }
+}
+
+#portfolio {
+  position: relative;
+}
+.waves1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.waves2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.waves3 {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+.wave1 {
+  fill: #5c5b5a;
+  animation: moveWave1 3s ease-in-out infinite alternate;
+}
+.wave2 {
+  fill: #b8b7b4;
+  opacity: 1;
+  animation: moveWave2 4s 1.2s ease-in-out infinite alternate;
+}
+
+.wave3 {
+  fill: #e6e5e1;
+  opacity: 1;
+  animation: moveWave3 4s 0.7s ease-in-out infinite alternate;
+}
+.wave4 {
+  fill: #e6e5e1;
+  opacity: 1;
+  animation: moveWave4 4s 0.3 ease-in-out infinite alternate;
+}
+@keyframes moveWave1 {
+  from {
+    transform: translateX(-50px);
+  }
+}
+@keyframes moveWave2 {
+  from {
+    transform: translateX(-25px);
+  }
+}
+@keyframes moveWave3 {
+  from {
+    transform: translateX(-25px);
+  }
+}
+
+@keyframes moveWave4 {
+  from {
+    transform: translateX(-10px);
+  }
 }
