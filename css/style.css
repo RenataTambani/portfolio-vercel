@@ -12,10 +12,8 @@ html {
   width: auto;
 }
 body {
-  background-image: url(/img/anastasia-taioglou-CTivHyiTbFw-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: inherit;
+  background-image: url(/img/oceano3.jpg);
+  background-size: cover;
   color: black;
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
@@ -25,12 +23,10 @@ body {
 
 #home {
   padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 
 #portfolio {
-  height: 200px;
-
   position: relative;
 }
 a {
@@ -40,8 +36,17 @@ a {
 #contato {
   color: white;
 }
-.nome p {
+.nome {
   text-align: start;
+  color: white;
+}
+.texto-nome {
+  margin-left: 10px;
+}
+.nome,
+.texto-home,
+.texto-nome {
+  color: white;
 }
 .container2 {
   max-width: 1200px;
@@ -54,10 +59,11 @@ a {
 }
 
 .container-portfolio {
-  height: auto;
+  height: 40rem;
   padding: 10px;
 }
 .container-celular {
+  align-self: center;
   width: 900px;
   z-index: 1;
 }
@@ -71,17 +77,26 @@ a {
   margin-top: -12rem;
 }
 .sobre {
+  padding-left: 10rem;
   font-size: 5rem;
   font-weight: 100;
-  color: #5c5b5a;
+  color: #3a3939;
+  opacity: 0.8;
+}
+.texto-sobre {
+  padding-left: 10rem;
 }
 
 #sobre {
-  padding-top: 2rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  margin-bottom: 10rem;
+  margin-top: 10rem;
+  background: #e6e5e1b6;
 }
+
 h1 {
-  color: #5c5b5a;
+  color: #3a3939;
   opacity: 0.8;
   font-size: 4.5rem;
   font-weight: 100;
@@ -128,10 +143,11 @@ li a:hover {
 .box {
   float: top;
   overflow: hidden;
-  background: #e6e5e1;
+  background: white;
   position: absolute;
   margin-top: 6rem;
   margin-left: 3rem;
+  border-radius: 20px;
 }
 /* Add padding and border to inner content
 for better animation effect */
@@ -139,9 +155,8 @@ for better animation effect */
   text-align: justify;
   width: 15rem;
   height: auto;
-  padding: 10px;
-  border: 1px solid #777776;
-  border-radius: 4px;
+  padding: 30px;
+  /* border: 1px solid #777776; */
 }
 .btn-inner {
   text-decoration: none;
@@ -158,7 +173,9 @@ for better animation effect */
   width: 15rem;
 }
 .wave-baixo {
-  padding-top: 15rem;
+  margin-top: -10px;
+  margin-bottom: 10rem;
+  box-sizing: none;
 }
 .wave-todas {
   padding-bottom: 50rem;
@@ -219,10 +236,6 @@ for better animation effect */
     font-size: medium;
   }
 
-  .wave-baixo {
-    padding-top: 200px;
-  }
-
   .scroll-celular {
     overflow-x: scroll;
   }
@@ -242,7 +255,7 @@ for better animation effect */
 /*FINAL MEDIA QUERY*/
 
 .waves-todas {
-  margin-top: 300px;
+  margin-top: 10rem;
   z-index: 1;
 }
 .waves1 {
@@ -278,13 +291,13 @@ for better animation effect */
   z-index: -1;
 }
 .wave1 {
-  fill: #051219;
-  opacity: 0.5;
+  fill: black;
+  opacity: 0.4;
   animation: moveWave1 3s ease-in-out infinite alternate;
 }
 .wave2 {
-  fill: #003040;
-  opacity: 0.6;
+  fill: black;
+  opacity: 0.5;
   animation: moveWave2 4s 1.2s ease-in-out infinite alternate;
 }
 
