@@ -162,14 +162,7 @@ for better animation effect */
   height: auto;
   padding: 30px 30px 16px 30px;
 }
-.btn-celular a {
-  font-family: "Roboto", sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-}
+
 .btn-celular {
   height: 100%;
   display: flex;
@@ -177,7 +170,12 @@ for better animation effect */
   justify-content: center;
   margin: auto;
   margin-bottom: 1rem;
-
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
   width: 140px;
   height: 45px;
   background-color: #7d928f;
