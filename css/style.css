@@ -101,9 +101,7 @@ h1 {
   font-weight: 100;
   font-family: "Montserrat", sans-serif;
 }
-.home p {
-  font-weight: 100;
-}
+
 img {
   width: 100%;
 }
@@ -284,13 +282,14 @@ for better animation effect */
   }
 
   .nome {
+    color: #232928;
     padding-top: 3rem;
   }
-  .nome,
+
   .texto-home,
   .texto-nome {
-    color: #384241;
-    font-weight: 300 !important;
+    color: #232928;
+    font-weight: 500 !important;
   }
   #portfolio h2 {
     position: relative;
@@ -336,6 +335,7 @@ for better animation effect */
 
   .texto-sobre,
   .sobre {
+    color: #232928;
     padding: 0px;
     display: flex;
     flex-direction: column-reverse;
