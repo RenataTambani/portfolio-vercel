@@ -216,6 +216,9 @@ for better animation effect */
 /* MEDIA QUERY */
 
 @media (max-width: 1200px) {
+  .container2 {
+    max-width: 900px;
+  }
   #portfolio h2 {
     position: relative;
     padding-top: 1rem;
@@ -223,6 +226,7 @@ for better animation effect */
   #home {
     flex-direction: column;
   }
+
   .sobre {
     font-size: 3rem;
   }
@@ -235,8 +239,6 @@ for better animation effect */
   .texto-sobre,
   .sobre {
     padding: 0px;
-    display: flex;
-    flex-direction: column-reverse;
   }
   .sobre-container {
     padding: 2rem;
@@ -249,6 +251,14 @@ for better animation effect */
   }
 }
 @media (max-width: 820px) {
+  #home {
+    background: #e6e5e1b6;
+    padding: 0px;
+  }
+  .home {
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+  }
   .container2 {
     width: 100%;
   }
@@ -273,6 +283,12 @@ for better animation effect */
   }
   a {
     font-size: small;
+  }
+  .nome,
+  .texto-home,
+  .texto-nome {
+    color: #7d928f;
+    font-weight: 300 !important;
   }
   #portfolio h2 {
     position: relative;
@@ -306,6 +322,34 @@ for better animation effect */
   }
   .slide-toggle {
     width: auto;
+  }
+  .sobre {
+    font-size: 3rem;
+  }
+
+  #sobre {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .texto-sobre,
+  .sobre {
+    padding: 0px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .sobre-container {
+    padding: 2rem;
+  }
+
+  .foto-sobre img {
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+  }
+
+  #contato {
+    padding: 2rem 2rem 2rem 1rem !important;
   }
 }
 
