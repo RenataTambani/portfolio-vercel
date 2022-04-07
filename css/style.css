@@ -282,10 +282,14 @@ for better animation effect */
   a {
     font-size: small;
   }
+
+  .nome {
+    padding-top: 3rem;
+  }
   .nome,
   .texto-home,
   .texto-nome {
-    color: #7d928f;
+    color: #384241;
     font-weight: 300 !important;
   }
   #portfolio h2 {
