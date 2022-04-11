@@ -81,7 +81,10 @@ a {
   color: #3a3939;
   opacity: 0.8;
 }
-
+.texto-sobre {
+  font-size: 1rem;
+  font-weight: 300;
+}
 .sobre-container {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -331,6 +334,9 @@ for better animation effect */
   }
   .sobre {
     font-size: 3rem;
+  }
+  .texto-sobre {
+    font-size: 1rem;
   }
 
   #sobre {
