@@ -1,4 +1,4 @@
-// function init() {
+//
 //   $(document).ready(function () {
 //     const sitesBtns = document.querySelectorAll(".slide-toggle");
 
@@ -16,22 +16,42 @@
 //     });
 //   });
 // }
-// init();
+//
 
-const celulares = document.querySelectorAll(".zoom");
+function initCelular() {
+  const celulares = document.querySelectorAll(".zoom");
 
-function animaCelular() {
+  function animaCelular() {
+    celulares.forEach((celular) => {
+      if (celular === this) {
+        this.classList.toggle("ativo");
+        this.firstElementChild.classList.toggle("ativo");
+      } else {
+        celular.classList.remove("ativo");
+        celular.firstElementChild.classList.remove("ativo");
+      }
+    });
+  }
+
   celulares.forEach((celular) => {
-    if (celular === this) {
-      this.classList.toggle("ativo");
-      this.firstElementChild.classList.toggle("ativo");
-    } else {
-      celular.classList.remove("ativo");
-      celular.firstElementChild.classList.remove("ativo");
+    celular.addEventListener("click", animaCelular);
+  });
+}
+initCelular();
+
+const sections = document.querySelectorAll(".scroll");
+const windowMetade = window.innerHeight * 0.7;
+
+function animaScroll() {
+  sections.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top - windowMetade;
+
+    if (sectionTop < 0) {
+      section.classList.add("ativo2");
     }
   });
 }
 
-celulares.forEach((celular) => {
-  celular.addEventListener("click", animaCelular);
-});
+window.addEventListener("scroll", animaScroll);
+
+document.addEventListener("click", animaCelular);

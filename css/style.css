@@ -24,7 +24,9 @@ body {
   padding-top: 3rem;
   padding-bottom: 6rem;
 }
-
+#geral {
+  margin-top: 8rem;
+}
 #portfolio {
   position: relative;
 }
@@ -187,7 +189,7 @@ for better animation effect */
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-  animation: btn-celular-open 2s;
+  animation: btn-celular-open 1s;
 }
 .btn-celular a {
   padding: 0px;
@@ -198,7 +200,7 @@ for better animation effect */
   color: #ffffff;
   transform: translateY(-7px);
 }
-
+/* 
 @keyframes faixa-open {
   from {
     height: 0px;
@@ -208,7 +210,7 @@ for better animation effect */
     height: 200px;
     opacity: 1;
   }
-}
+} */
 @keyframes btn-celular-open {
   from {
     height: 0px;
@@ -230,6 +232,16 @@ for better animation effect */
 .ativo {
   display: block;
   position: relative;
+}
+
+.scroll {
+  opacity: 0;
+  transform: translate3d(-300px, 0, 0);
+}
+.scroll.ativo2 {
+  opacity: 1;
+  transition: 3s;
+  transform: translate3d(0px, 0, 0);
 }
 
 .wave-baixo {
@@ -482,7 +494,7 @@ for better animation effect */
   }
 }
 
-.go-back {
+/* .animacaocss {
   animation: bounce 1s 2 alternate;
 }
 @keyframes bounce {
@@ -492,7 +504,7 @@ for better animation effect */
   to {
     transform: translateY(-15px);
   }
-}
+} */
 
 .animacao {
   transform: translateY(300px);
